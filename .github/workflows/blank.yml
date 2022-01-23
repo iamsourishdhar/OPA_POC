@@ -4,9 +4,8 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      
-      - name: Print Details
-        run: echo Hello,World
-        
+       - uses: satak/webrequest-action@master
+         with:
+           url: https://my-json-server.typicode.com/typicode/demo/posts
+           method: GET
 
