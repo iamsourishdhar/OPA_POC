@@ -6,6 +6,6 @@ jobs:
     steps:
        - uses: satak/webrequest-action@master
          with:
-           url: https://my-json-server.typicode.com/typicode/demo/posts
+           url: http://localhost:8118/hello
            method: GET
 
