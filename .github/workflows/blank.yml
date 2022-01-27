@@ -1,11 +1,1 @@
-name: learn-github-actions
-on: [push]
-jobs:
-  check-bats-version:
-    runs-on: ubuntu-latest
-    steps:
-       - uses: satak/webrequest-action@master
-         with:
-           url: http://localhost:8118/hello
-           method: GET
 
