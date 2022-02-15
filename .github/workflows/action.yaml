@@ -1,0 +1,11 @@
+name: opa-poc
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+       - uses: satak/webrequest-action@master
+         with:
+           url: https://asia-south1-opa-poc-340207.cloudfunctions.net/bundle-manager
+           method: POST
+           payload : '"AP101"'
