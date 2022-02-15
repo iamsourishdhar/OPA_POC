@@ -5,7 +5,7 @@ import input
 
 
 
-default allow = false
+default allow = true
 
 headers = {
     "Content-Type": "application/json",
